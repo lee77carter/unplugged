@@ -88,7 +88,6 @@ textarea {
    ========================================================================== */
 
 .content-wrapper {
-  outline: 3px dotted red;
   width: 90%;
   margin: 50px 0; 
 }
@@ -349,10 +348,99 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+  
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  .content-wrapper {
+    outline: 3px dotted red;
+    width: 640px;
+    margin: 100px 0; 
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+  
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-items-description {
+    width: 50%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+  }
+
+  .footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .contact {
+    margin-bottom: 0;
+  }
+
+  .footer .copyright {
+    width: 100%;
+  }
 }
+  
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+  .content-wrapper {
+    width: 940px;
+  }
+  
+}
+
+/* @media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition  } */
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
