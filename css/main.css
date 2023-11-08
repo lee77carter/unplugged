@@ -88,6 +88,7 @@ textarea {
    ========================================================================== */
 
 .content-wrapper {
+  /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
 }
@@ -163,7 +164,7 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/*   Mobile Styles ========================== */
+/*   Mobile Styles ==========================  */
 
 /* Hero Area */
 .hero-area {
@@ -210,8 +211,7 @@ aside {
 }
 
 .reviews h2 {
-  display: flex;
-  justify-content: center;
+margin-bottom: 40px;
 }
 
 .reviews h3 {
@@ -222,24 +222,18 @@ aside {
 /* ====== ====== 
    About Page 
 =====  ==== */
-.mission-content {
+.mission {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
-.mission-content p {
-  width: 20px 0;
-}
-
-.contact-section .content-wrapper h2 {
-  width: 20px 0;
-}
-
-.contact-content {
+.contact-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /* ====== ====== 
@@ -358,7 +352,7 @@ aside {
   /*Tablet styles here*/
 
   .content-wrapper {
-    outline: 3px dotted red;
+    /* outline: 3px dotted red; */
     width: 640px;
     margin: 100px 0;
   }
@@ -483,6 +477,56 @@ aside {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
+  .content-wrapper {
+    outline: 3px dotted red; 
+    max-width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Hero section */
+  aside .content-wrapper {    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ====== ====== 
+   About Page 
+=====  ==== */
+  .mission h2, .content-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ====== ====== 
+   FAQ Page 
+=====  ==== */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* @media only screen and (min-width: 35em) {
