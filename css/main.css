@@ -141,6 +141,14 @@
     line-height: 1.285;
   }
   
+  img {
+    width: 100%;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
   address {
     font-style: normal;
   }
@@ -165,6 +173,10 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+  
+  header figure {
+    width: 60%;
   }
   
   .header-divider {
@@ -232,6 +244,10 @@
   /* Hero Area */
   
   .hero-area {
+    background: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
   }
@@ -277,9 +293,38 @@
     text-transform: uppercase;
   }
   
+  aside .form {
+    margin-top: 30px;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
   /* Features */
   
   .features {
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
   }
@@ -463,13 +508,23 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width:768px) {
+  @media only screen and (min-width: 768px) {
     /*Tablet styles here*/
   
     /* General styles */
     .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
+    }
+  
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
     }
   
     h2 {
@@ -497,11 +552,17 @@
     }
   
     header nav {
-      width: 20%;
+      width: 40%;
+      height: 10px;
     }
   
     header nav ul {
       justify-content: space-between;
+      justify-content: flex-start;
+    }
+
+   nav a {
+    padding: 34px 24px;
     }
   
     .header-divider {
@@ -509,6 +570,10 @@
     }
   
     /* Hero Area */
+  
+    .hero-area {
+      min-height: 600px;
+    }
   
     .hero-area h1 {
       font-size: 3em;
@@ -557,6 +622,7 @@
       width: 85%;
     }
   
+    .reviews article figure,
     .reviews article div {
       width: 49%;
     }
@@ -671,6 +737,11 @@
     p {
       font-size: 1.125em;
       line-height: 1.333;
+    }
+
+    ul, 
+    ol {
+      padding: 0 5px 0px 45px;
     }
   
     /* Hero */
