@@ -1,4 +1,4 @@
-# responsive-website-project
+# unplugged
 ![Unplugged Retreat Website](img/unplug-snap.png)
 
 ## Description
